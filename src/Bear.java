@@ -1,15 +1,15 @@
-public class Tiger {
+public class Bear {
     public String name;
-    public String favoriteFood = "meat";
+    public String favoriteFood = "fish";
 
-    public Tiger(String name) {
+    public Bear(String name) {
         this.name = name;
-        favoriteFood = "meat";
+        this.favoriteFood = "fish";
     }
 
 
     public void sleep(String name) {
-        System.out.println(name + " sleeps for 8 hours");
+        System.out.println(name + " sleeps for 12 hours");
     }
 
     public void eat(String food) {
@@ -18,13 +18,6 @@ public class Tiger {
             System.out.println("YUM!!! " + name + " wants more " + food);
         } else {
             System.out.println(name + " eats " + food);
-            sleep(name);
         }
-    }
-
-    public static void main(String[] args) {
-        Tiger tigger = new Tiger("Tigger");
-        tigger.eat("meat");
-        tigger.eat("kibble");
     }
 }
