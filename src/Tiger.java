@@ -4,6 +4,7 @@ public class Tiger {
 
     public Tiger(String name) {
         this.name = name;
+        favoriteFood = "meat";
     }
 
 
