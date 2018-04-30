@@ -1,23 +1,12 @@
-public class Bear {
-    public String name;
-    public String favoriteFood = "fish";
+public class Bear extends Animal {
 
     public Bear(String name) {
-        this.name = name;
-        this.favoriteFood = "fish";
+        super(name, "fish");
     }
 
 
     public void sleep(String name) {
-        System.out.println(name + " sleeps for 12 hours");
+        System.out.println(name + " hibernates for 4 months");
     }
 
-    public void eat(String food) {
-        if (food.equals(favoriteFood)) {
-            System.out.println(name + " eats " + food);
-            System.out.println("YUM!!! " + name + " wants more " + food);
-        } else {
-            System.out.println(name + " eats " + food);
-        }
-    }
 }
