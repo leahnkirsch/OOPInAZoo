@@ -1,6 +1,5 @@
+import java.util.ArrayList;
 public class zoo {
-//    String favoriteFood ="bacon";
-
     public static void main(String[] args){
         Tiger tigger = new Tiger("Tigger");
         tigger.eat("meat");
@@ -10,15 +9,24 @@ public class zoo {
         pooh.eat("meat");
         Unicorn rarity = new Unicorn("Rarity");
         rarity.eat("marshmallows");
-        rarity.sleep("Rarity");
+        rarity.sleep();
         Giraffe gemma = new Giraffe("Gemma");
         gemma.eat("meat");
         gemma.eat("leaves");
-        gemma.sleep("Gemma");
+        gemma.sleep();
         Bee stinger = new Bee ("Stinger");
         stinger.eat("ice cream");
         stinger.eat("pollen");
-        stinger.sleep("Stinger");
+        stinger.sleep();
+        ArrayList<Animal> animals = new ArrayList<Animal>();
+        animals.add(pooh);
+        animals.add(tigger);
+        animals.add(rarity);
+        animals.add(gemma);
+        animals.add(stinger);
+        Zookeeper zoebot = new Zookeeper("Zoebot");
+        zoebot.feedAnimals(animals, "popcorn");
+
     }
 
 }
